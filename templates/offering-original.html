@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.TITLE }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> <!--load all styles -->
+</head>
+<body>
+    <h1>{{ post.TITLE }}</h1>
+    <p class="font-bold">{{ post.SUMMARY }}</p>
+    {{ post.content | safe }}
+</body>
+</html>
